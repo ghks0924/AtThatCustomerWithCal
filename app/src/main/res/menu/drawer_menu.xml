@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_board"
+        android:title="메뉴판 설정"
+        android:icon="@android:drawable/ic_menu_gallery"/>
+    <item
+        android:id="@+id/menu_sms"
+        android:title="문자 템플릿"
+        android:icon="@android:drawable/ic_menu_send"/>
+
+    <item android:id="@+id/sign_out"
+        android:title="로그아웃"/>
+
+    <item android:title="Your Account">
+        <menu>
+            <item android:id="@+id/menu_aa"
+                android:title="aa"/>
+            <item android:id="@+id/menu_bb"
+                android:title="bb"/>
+
+        </menu>
+    </item>
+
+</menu>

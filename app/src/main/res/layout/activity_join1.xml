@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Activity_Joini1">
+
+    <RelativeLayout
+        android:id="@+id/topLl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="14dp"
+            android:layout_height="22.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/revised_backarrow" />
+
+        <TextView
+            android:id="@+id/joinTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosansmonocjkkrbold"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textColor="#211f1f"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+
+            android:fontFamily="@font/notosanscjkkrmedium"
+            android:text="다음"
+            android:textColor="@color/mainPink"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_below="@+id/topLl"
+        android:layout_centerInParent="true"
+        android:background="@color/mainGreyForLine" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLl"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/contentLl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/checkRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="35.5dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/fullAgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkrmedium"
+                    android:text="전체동의"
+                    android:textColor="@color/mainGrey" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/fullAgree"
+                    android:layout_centerInParent="true"
+                    android:background="@color/mainGreyFor50" />
+
+
+                <LinearLayout
+                    android:id="@+id/serviceLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/serviceAgree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosanscjkkrmedium"
+                        android:text="서비스 이용약관 동의 (필수)"
+                        android:textColor="@color/mainGrey" />
+
+                    <CheckBox
+                        android:id="@+id/privacyAgree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosanscjkkrmedium"
+                        android:text="개인정보 수집 이용 동의 (필수)"
+                        android:textColor="@color/mainGrey" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/memberDataTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="31dp"
+
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="휴대폰 번호"
+                android:textColor="@color/mainGrey"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/phoneNbEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+
+                android:background="@drawable/edittext_frame_grey"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:hint=" - 없이 숫자만 입력"
+                android:inputType="phone"
+
+
+                android:maxLength="13"
+                android:paddingLeft="5dp"
+                android:textColor="@color/mainGrey"
+                android:textColorHint="@color/mainGreyFor50"
+                android:textCursorDrawable="@drawable/cursor_edittext"
+
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/shopNmTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="31dp"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="가게명"
+                android:textColor="@color/mainGrey"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/shopNmEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+
+                android:background="@drawable/edittext_frame_grey"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:hint="속눈썹 연장샵"
+                android:paddingLeft="5dp"
+
+                android:textColor="@color/mainGrey"
+                android:textColorHint="@color/mainGreyFor50"
+                android:textCursorDrawable="@drawable/cursor_edittext"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/shopInfoTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginRight="10dp"
+
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="지역"
+                android:textColor="@color/mainGrey"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/regionTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+
+                android:background="@drawable/rounded_corner_hintgrey"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:gravity="center"
+                android:hint="지역 선택"
+                android:textColor="@color/mainGrey"
+                android:textColorHint="@color/mainGreyFor50"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/extraInfoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="31dp"
+
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="생년월일"
+                android:textColor="@color/mainGrey"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/birthEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+
+                android:background="@drawable/edittext_frame_grey"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:hint="8자리 입력 - 19xx/xx/xx"
+                android:inputType="number"
+
+                android:maxLength="8"
+                android:paddingLeft="5dp"
+                android:textColor="@color/mainGrey"
+                android:textColorHint="@color/mainGreyFor50"
+
+                android:textCursorDrawable="@drawable/cursor_edittext"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="31dp"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="성별"
+                android:textColor="@color/mainGrey"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/maleRb"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notosanscjkkrmedium"
+                    android:gravity="center"
+                    android:text="여"
+                    android:textColor="@color/mainGrey"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/femaleRb"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:fontFamily="@font/notosanscjkkrmedium"
+                    android:text="남"
+                    android:textColor="@color/mainGrey"
+                    android:textSize="13sp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

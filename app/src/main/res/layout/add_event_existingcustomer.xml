@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_Create_Customer">
+
+    <RelativeLayout
+        android:id="@+id/headerRl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mainPink">
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="14dp"
+            android:layout_height="22.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/revised_backarrow" />
+
+        <TextView
+            android:id="@+id/joinTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosansmonocjkkrbold"
+            android:gravity="center"
+            android:text="예약정보"
+            android:textColor="#211f1f"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+
+            android:fontFamily="@font/notosanscjkkrmedium"
+            android:text="다음"
+            android:textColor="@color/mainPink"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/loadCusData"
+        android:layout_below="@+id/headerRl"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+
+        android:background="@drawable/button_rounded_mainpinkborder"
+        android:backgroundTint="@color/white"
+        android:stateListAnimator="@null"
+
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:text="고객정보 불러오기"
+        android:textColor="@color/mainPink"
+
+        />
+
+
+
+
+
+
+</RelativeLayout>

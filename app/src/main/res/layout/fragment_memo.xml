@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/topRl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/joinTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:fontFamily="@font/notosansmonocjkkrbold"
+            android:text="메모장"
+            android:textColor="#211f1f"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topRl"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_memo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                >
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+        <!--    <ListView-->
+        <!--        android:id="@+id/listview_fragment_memo"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:divider="#00000000"-->
+        <!--        android:dividerHeight="5dp"-->
+
+        <!--        android:layout_marginLeft="10dp"-->
+        <!--        android:layout_marginRight="10dp"-->
+
+        <!--        android:drawSelectorOnTop="true"-->
+
+        <!--        />-->
+
+    </ScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botLl"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/ivory"
+        android:src="@drawable/white_cross"
+        app:borderWidth="0dp"
+
+        app:elevation="1dp"
+        app:tint="@null" />
+
+
+</RelativeLayout>
+

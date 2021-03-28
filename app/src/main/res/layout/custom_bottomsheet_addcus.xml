@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bottomsheetdialog">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+
+        android:fontFamily="@font/gilroyextrabold"
+        android:text="회원등록하기"
+        android:textSize="25sp"
+        android:textColor="#4f4f4f"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/manuallyAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:stateListAnimator="@null"
+        app:cornerRadius="10dp"
+        android:elevation="3dp"
+
+
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:textColor="@color/mainGrey"
+        android:text="직접등록하기"
+        android:textSize="18sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fromPhonebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="10dp"
+        android:elevation="3dp"
+
+
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:text="연락처 가져오기"
+        android:textColor="@color/mainGrey"
+        android:textSize="18sp"/>
+</LinearLayout>

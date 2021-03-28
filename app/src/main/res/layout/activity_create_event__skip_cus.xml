@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_Create_Customer">
+
+    <RelativeLayout
+        android:id="@+id/headerRl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mainPink"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/back_cardview"
+            android:layout_width="@dimen/arrow_background_width"
+            android:layout_height="@dimen/arrow_background_height"
+            android:backgroundTint="@color/transparent"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            android:clickable="true"
+
+
+            app:rippleColor="@color/weakGrey"
+            android:layout_centerVertical="true"
+
+            android:layout_marginLeft="@dimen/margin_back_iv_left">
+
+            <ImageView
+                android:id="@+id/backIv"
+                android:layout_width="@dimen/size_back_iv_width"
+                android:layout_height="@dimen/size_back_iv_height"
+                android:adjustViewBounds="true"
+
+                android:layout_gravity="center"
+
+                android:src="@drawable/revised_backarrow" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/joinTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:fontFamily="@font/notosansmonocjkkrbold"
+            android:gravity="center"
+            android:text="@string/title_create_evt_activity"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_textsize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@color/weakGrey" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rsv_type_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_big_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_big_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_big_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_big_horizontal_margin"
+        android:background="@drawable/rounded_corner_weakgrey"
+
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerRl">
+
+        <TextView
+            android:id="@+id/rsv_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/activity_small_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_small_horizontal_margin"
+            android:layout_marginTop="@dimen/margin_top_datecontent"
+            android:layout_weight="1"
+
+            android:fontFamily="@font/notosanscjkkrmedium"
+            android:gravity="center"
+            android:text="@string/rsv_type_tv"
+            android:textColor="@color/mainGrey"
+            android:textSize="@dimen/textsize_default" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/activity_small_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_small_horizontal_margin"
+
+            android:layout_marginBottom="@dimen/activity_small_vertical_margin"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/newRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:id="@+id/newTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="@dimen/activity_big_horizontal_margin"
+
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="@string/new_reserve"
+                android:textColor="@color/mainGrey" />
+
+            <RadioButton
+                android:id="@+id/retouchRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_big_horizontal_margin" />
+
+            <TextView
+                android:id="@+id/retouchTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="@string/retouch"
+                android:textColor="@color/mainGrey" />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rsv_date_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_big_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_big_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_small_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_big_horizontal_margin"
+        android:background="@drawable/rounded_corner_weakgrey"
+
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rsv_type_Rl">
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/activity_small_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_small_horizontal_margin"
+            android:layout_marginTop="@dimen/margin_top_datecontent"
+            android:layout_weight="1"
+
+            android:fontFamily="@font/notosanscjkkrmedium"
+            android:gravity="center"
+            android:text="@string/rsv_date_tv"
+            android:textColor="@color/mainGrey"
+            android:textSize="@dimen/textsize_default" />
+
+
+        <TextView
+            android:id="@+id/dateContentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/activity_small_horizontal_margin"
+
+            android:layout_marginLeft="@dimen/activity_small_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_small_vertical_margin"
+            android:layout_weight="1"
+            android:fontFamily="@font/notosanscjkkrmedium"
+            android:gravity="center"
+
+            android:text="날짜를 선택해주세요"
+            android:textColor="@color/mainPink"
+            android:textSize="@dimen/textsize_small" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rsv_time_Ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_big_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_big_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_small_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_big_horizontal_margin"
+        android:background="@drawable/rounded_corner_weakgrey"
+
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rsv_date_Rl">
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/activity_small_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_small_horizontal_margin"
+            android:layout_marginTop="@dimen/margin_top_datecontent"
+            android:layout_weight="1"
+
+            android:fontFamily="@font/notosanscjkkrmedium"
+            android:gravity="center"
+            android:text="@string/rsv_time_tv"
+            android:textColor="@color/mainGrey"
+            android:textSize="@dimen/textsize_default" />
+
+        <TextView
+            android:id="@+id/timeContentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/activity_small_horizontal_margin"
+
+            android:layout_marginLeft="@dimen/activity_small_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_small_vertical_margin"
+            android:layout_weight="1"
+            android:fontFamily="@font/notosanscjkkrmedium"
+            android:gravity="center"
+
+            android:text="시간을 입력해주세요"
+            android:textColor="@color/mainPink"
+            android:textSize="@dimen/textsize_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rsv_memo_Ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height_linearlayout_memo"
+        android:layout_marginStart="@dimen/activity_big_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_big_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_small_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_big_horizontal_margin"
+        android:background="@drawable/rounded_corner_weakgrey"
+
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rsv_time_Ll">
+
+        <TextView
+            android:id="@+id/memoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/activity_small_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_small_horizontal_margin"
+            android:layout_marginTop="@dimen/margin_top_datecontent"
+            android:layout_weight="1"
+
+            android:fontFamily="@font/notosanscjkkrmedium"
+            android:gravity="center"
+            android:text="@string/memo_tv"
+            android:textColor="@color/mainGrey"
+            android:textSize="@dimen/textsize_default" />
+
+        <EditText
+            android:id="@+id/memoEt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginStart="@dimen/activity_small_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_small_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_small_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_small_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_small_vertical_margin"
+
+            android:background="@null"
+            android:maxLines="4"
+
+            android:fontFamily="@font/notosanscjkkrmedium"
+            android:gravity="top"
+            android:hint="예약시 특이사항을 메모해주세요"
+            android:textColor="@color/mainGrey"
+            android:textColorHint="@color/mainGreyFor50"
+            android:textSize="@dimen/textsize_default"
+
+            android:textCursorDrawable="@drawable/cursor_edittext"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/okBtn"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+
+        android:background="@color/mainPink"
+        android:foreground="?selectableItemBackground"
+
+        android:fontFamily="@font/notosansmonocjkkrbold"
+        android:text="@string/rsv_ok_btn"
+        android:textSize="@dimen/textsize_default"
+        android:textColor="@color/mainGrey"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

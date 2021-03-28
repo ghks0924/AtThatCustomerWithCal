@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EachMember"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/customerInfoLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/customerInfoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원정보"
+                android:layout_margin="3dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/smartphone"/>
+
+                    <TextView
+                        android:id="@+id/numberTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="01030773637"
+                        android:paddingLeft="5dp"
+                        android:textSize="17sp"/>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/grade"/>
+
+                    <TextView
+                        android:id="@+id/gradeTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="GOLD"
+                        android:paddingLeft="5dp"
+                        android:textSize="17sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/point"/>
+
+                    <TextView
+                        android:id="@+id/pointTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="잔여 정액권"
+                        android:paddingLeft="5dp"
+                        android:textSize="17sp"/>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/history"/>
+
+                    <RelativeLayout
+                        android:id="@+id/historyRl"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:id="@+id/historyTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="방문이력"
+                            android:paddingLeft="5dp"
+                            android:textSize="17sp"/>
+
+                        <ImageView
+                            android:id="@+id/downArrowIv"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:background="@drawable/downarrow"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="3dp"/>
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:id="@+id/upArrowIv"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:background="@drawable/uparrow"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="3dp"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dfdfdf"
+                android:layout_margin="1dp"/>
+
+            <ListView
+                android:id="@+id/historyListView"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/member_view_memoLl"
+                android:layout_above="@+id/member_view_botRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp">
+
+                <ImageView
+                    android:id="@+id/memoIv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/memo"/>
+
+                <EditText
+                    android:id="@+id/eachMember_memoEt"
+                    android:hint="메모할 내용을 입력하세요"
+                    android:text="회원 메모"
+                    android:gravity="top"
+                    android:layout_margin="5dp"
+                    android:layout_above="@+id/member_view_botRl"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdfdf"
+            android:layout_margin="1dp"/>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:horizontalSpacing="2dp"
+            android:verticalSpacing="2dp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/noShowTv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/gridview"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/member_view_botRl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/loadImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="불러오기"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:id="@+id/cameraIv"
+            android:background="@drawable/camera"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_margin="3dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            />
+
+        <Button
+            android:id="@+id/extraBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentRight="true"
+            android:text="예약생성"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

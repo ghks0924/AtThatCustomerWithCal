@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grade">
+        <item>VIP</item>
+        <item>GOLD</item>
+        <item>재방문</item>
+        <item>신규</item>
+        <item>BLACK</item>
+    </string-array>
+
+</resources>

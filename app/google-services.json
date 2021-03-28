@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "337629695035",
+    "project_id": "today-s-eyebrow",
+    "storage_bucket": "today-s-eyebrow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337629695035:android:b282fb5caa3847bd9de01e",
+        "android_client_info": {
+          "package_name": "com.example.atthatcustomerwithcal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337629695035-nrjagt683ucr715dgc9hlqe891gijqif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEHMbQTqiC_T_CTgsS9YCKdvp8GqRKv_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337629695035-nrjagt683ucr715dgc9hlqe891gijqif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

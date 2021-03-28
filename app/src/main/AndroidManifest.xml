@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.atthatcustomerwithcal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="오늘의눈썹"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar2"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity_LoadCustomers">
+
+        </activity>
+        <activity android:name=".Activity_CreateEvent_SkipCus" />
+        <activity android:name=".Activity_CreateEvent_NewCus" />
+        <activity android:name=".Activity_CreateEvent_OldCus" />
+        <activity android:name=".Update_Memo" />
+        <activity android:name=".Activity_Create_Memo" />
+        <activity android:name=".HomeMenuActivity" />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_FindId" />
+        <activity
+            android:name=".SelectTypeOfService"
+            android:theme="@style/popupTheme" />
+        <activity
+            android:name=".SelectRegion"
+            android:theme="@style/popupTheme" />
+        <activity
+            android:name=".ShowEventMemo"
+            android:theme="@style/popupTheme" />
+        <activity android:name=".EditMemberData" />
+        <activity
+            android:name=".Add_SmsTemplate"
+            android:theme="@style/popupTheme" />
+        <activity android:name=".SmsListActivity" />
+        <activity android:name=".PhotoGalleryActivity" />
+        <activity android:name=".Add_event_newCustomerFromHome" />
+        <activity android:name=".Add_event_nonFromHome" />
+        <activity android:name=".Add_event_nonFromCal" />
+        <activity android:name=".Add_event_retouch" />
+        <activity android:name=".Add_event_existingCustomer" />
+        <activity
+            android:name=".EachEventActivity"
+            android:theme="@style/popupTheme" />
+        <activity android:name=".MemoActivity" />
+        <activity
+            android:name=".PopupCalendarActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".Activity_Accounting" />
+        <activity android:name=".Add_Event_FromMemList_retouch" />
+        <activity android:name=".Add_Event_FromMemList" />
+        <activity android:name=".Activity_Create_Customer_FromBook" />
+        <activity android:name=".Add_event_newCustomerFromCal" />
+        <activity android:name=".MenuControlActivity" />
+        <activity android:name=".EachMember" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.atthatcustomerwithcal.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Activity_Login"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Activity_FindPwd" />
+        <activity android:name=".Activity_Join0" />
+        <activity android:name=".Activity_Joini1" />
+        <activity android:name=".ActivityJoin2" />
+        <activity android:name=".Activity_Join3" />
+        <activity android:name=".Activity_Create_Customer" />
+        <activity
+            android:name=".Activity_Base"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".MemberList" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Loading" />
+    </application>
+
+</manifest>

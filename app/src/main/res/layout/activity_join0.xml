@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Join0"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/topLl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="14dp"
+            android:layout_height="22.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/revised_backarrow" />
+
+        <TextView
+            android:id="@+id/joinTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosansmonocjkkrbold"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textColor="#211f1f"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:fontFamily="@font/notosanscjkkrmedium"
+            android:text="다음"
+            android:textColor="@color/mainPink"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mainGreyForLine" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topLl">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/IDTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="아이디 (이메일)"
+                android:textColor="@color/mainGrey"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <EditText
+                android:id="@+id/idEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/edittext_frame_grey"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:gravity="center_vertical"
+                android:hint="이메일 주소"
+                android:paddingLeft="5dp"
+                android:textColor="@color/mainGrey"
+                android:textColorHint="@color/mainGreyFor50"
+                android:textCursorDrawable="@drawable/cursor_edittext"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/IDTv" />
+
+            <TextView
+                android:id="@+id/idTv"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="실제 사용하는 메일주소 입력 (아이디/비밀번호 분실시 사용)"
+                android:textColor="@color/mainGreyFor50"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idEt" />
+
+            <TextView
+                android:id="@+id/pwdTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="비밀번호"
+                android:textColor="@color/mainGrey"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idTv" />
+
+
+            <EditText
+                android:id="@+id/pwdEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/edittext_frame_grey"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:hint="비밀번호 (영문+숫자 6자 이상)"
+                android:paddingLeft="5dp"
+                android:password="true"
+                android:textColor="@color/mainGrey"
+                android:textColorHint="@color/mainGreyFor50"
+                android:textCursorDrawable="@drawable/cursor_edittext"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pwdTv" />
+
+            <TextView
+                android:id="@+id/validPwdTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="비밀번호는 영문, 숫자 포함 6자 이상이어야 합니다."
+                android:textColor="@color/mainRed"
+
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pwdEt" />
+
+            <TextView
+                android:id="@+id/rePwdTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="비밀번호 확인"
+                android:textColor="@color/mainGrey"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/validPwdTv" />
+
+
+            <EditText
+                android:id="@+id/rePwdEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/edittext_frame_grey"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:hint="비밀번호 확인"
+                android:paddingLeft="5dp"
+                android:password="true"
+                android:textColor="@color/mainGrey"
+                android:textColorHint="@color/mainGreyFor50"
+                android:textCursorDrawable="@drawable/cursor_edittext"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rePwdTv" />
+
+            <TextView
+                android:id="@+id/pwdMatchTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/notosanscjkkrmedium"
+                android:text="비밀번호가 일치하지 않습니다."
+                android:textColor="@color/mainRed"
+
+                android:textSize="12sp"
+
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rePwdEt" />
+
+            <!--            <com.google.android.material.button.MaterialButton-->
+            <!--                android:id="@+id/nextBtn"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_marginTop="40dp"-->
+            <!--                android:layout_alignParentBottom="true"-->
+
+            <!--                android:text="다음"-->
+            <!--                android:textColor="@color/mainGrey"-->
+            <!--                android:textSize="15sp"-->
+            <!--                android:backgroundTint="@color/mainPink"-->
+
+            <!--                android:fontFamily="@font/notosansmonocjkkrbold"-->
+            <!--                android:stateListAnimator="@null"-->
+            <!--                />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mainPink</item>
+        <item name="colorPrimaryDark">@color/white</item> // 상태바 색상
+        <item name="colorAccent">@color/mainPink</item>
+        <item name="colorControlHighlight">#dfdfdf</item>
+
+
+
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:textColor">@color/mainGrey</item>
+
+        <!--EditText 밑줄 색깔-->
+        <item name="colorControlNormal">@color/mainPink</item>
+
+    </style>
+
+
+    //팝업 액티비티 다이얼로그 노타이틀
+
+    <style name="popupTheme" parent="Theme.AppCompat.Light.Dialog">
+
+        <item name="colorPrimary">@color/mainGrey</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/mainPink</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    //ripple effect
+
+    <style name="AppTheme.IvoryRipple">
+        <item name="colorControlHighlight">@color/ivory</item>
+    </style>
+
+    //NumberPicker 색상변경
+    <style name="AppTheme.NumberPicker" parent="AppTheme">
+        <item name="android:textColorPrimary">@color/mainGrey</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/notosansmonocjkkrbold</item>
+        <item name="colorControlNormal">@color/mainPink</item>
+    </style>
+
+
+    //Custom BottomSheetDialog
+    <style name="CustomBottomSheetDialog"
+        parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+    </style>
+
+
+
+</resources>

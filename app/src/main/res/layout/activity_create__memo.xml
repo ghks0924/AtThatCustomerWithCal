@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Create_Memo">
+
+    <RelativeLayout
+        android:id="@+id/topRl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="14dp"
+            android:layout_height="22.5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/revised_backarrow" />
+
+        <EditText
+            android:id="@+id/memoTitleEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:fontFamily="@font/notosansmonocjkkrbold"
+            android:textColor="@color/mainGreyFor50"
+            android:textSize="20sp"
+            android:hint="제목"
+            android:textColorHint="@color/mainGreyFor50"/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mainGreyForLine"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_below="@+id/topRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@null"
+
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:textSize="15sp"
+        android:textColor="@color/mainGrey"
+        android:hint="내용을 입력하세요"
+        android:textColorHint="@color/mainGreyFor50"
+        android:textCursorDrawable="@drawable/cursor_edittext"
+
+        android:paddingLeft="8dp"
+        android:gravity="top"
+
+        android:imeOptions="actionDone"
+        />
+
+</RelativeLayout>

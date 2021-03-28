@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //====================Toolbar===========================
+    //back imageview
+    <dimen name="size_back_iv_width">14dp</dimen>
+    <dimen name="size_back_iv_height">22.5dp</dimen>
+    <dimen name="margin_back_iv_left">20dp</dimen>
+
+    //title text size
+    <dimen name="title_textsize">18sp</dimen>
+
+    //menu hamburger_icon_size
+    <dimen name="hamburger_icon_width">25dp</dimen>
+    <dimen name="hamburger_icon_height">25dp</dimen>
+
+    //arrow_size
+    <dimen name="arrow_icon_width">22dp</dimen>
+    <dimen name="arrow_icon_height">22dp</dimen>
+
+    //arrow_background_size
+    <dimen name="arrow_background_width">28dp</dimen>
+    <dimen name="arrow_background_height">28dp</dimen>
+
+    //======================Margin=========================
+    //margin
+    <dimen name="activity_big_horizontal_margin">20dp</dimen>
+    <dimen name="activity_small_horizontal_margin">10dp</dimen>
+
+    <dimen name="activity_big_vertical_margin">20dp</dimen>
+    <dimen name="activity_small_vertical_margin">10dp</dimen>
+
+
+    <dimen name="margin_one_dp">1dp</dimen>
+    <dimen name="margin_two_dp">2dp</dimen>
+    <dimen name="margin_three_dp">3dp</dimen>
+    <dimen name="margin_four_dp">4dp</dimen>
+
+    //===================Cursor==========================
+    <dimen name="cursor_width">2dp</dimen>
+    <dimen name="cursor_padding">-10dp</dimen>
+
+    //==========================Create_Event_Activity==============================
+
+    <dimen name="textsize_default">14sp</dimen>
+    <dimen name="textsize_small">12sp</dimen>
+
+    <dimen name="margin_top_datecontent">3dp</dimen>
+
+    <dimen name="height_linearlayout_default">80dp</dimen>
+    <dimen name="height_linearlayout_memo">160dp</dimen>
+
+    <dimen name="profile_iv_width">35dp</dimen>
+    <dimen name="profile_iv_height">35dp</dimen>
+    <dimen name="profile_iv_background_width">50dp</dimen>
+    <dimen name="profile_iv_background_height">50dp</dimen>
+
+    <dimen name="button_loadcusdata_textsize">12sp</dimen>
+
+    <dimen name="history_iv_width">15dp</dimen>
+    <dimen name="history_iv_height">15dp</dimen>
+    <dimen name="history_iv_margin_left">5dp</dimen>
+    <dimen name="history_iv_margin_right">5dp</dimen>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_custom_calendar">
+
+    <LinearLayout
+        android:id="@+id/midLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateRl"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:fontFamily="@font/gilroyextrabold"
+            android:gravity="left"
+            android:paddingLeft="7dp"
+            android:text="S"
+            android:textColor="#e50000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:fontFamily="@font/gilroyextrabold"
+            android:gravity="left"
+            android:paddingLeft="7dp"
+            android:text="M"
+            android:textColor="#4f4f4f"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:fontFamily="@font/gilroyextrabold"
+            android:gravity="left"
+            android:paddingLeft="7dp"
+            android:text="T"
+            android:textColor="#4f4f4f"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:fontFamily="@font/gilroyextrabold"
+            android:gravity="left"
+            android:paddingLeft="7dp"
+            android:text="W"
+            android:textColor="#4f4f4f"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:fontFamily="@font/gilroyextrabold"
+            android:gravity="left"
+            android:paddingLeft="7dp"
+            android:text="T"
+            android:textColor="#4f4f4f"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:fontFamily="@font/gilroyextrabold"
+            android:gravity="left"
+            android:paddingLeft="7dp"
+            android:text="F"
+            android:textColor="#4f4f4f"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:fontFamily="@font/gilroyextrabold"
+            android:gravity="left"
+            android:paddingLeft="7dp"
+            android:text="S"
+            android:textColor="#4f4f4f"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_below="@+id/midLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7"
+        ></GridView>
+
+
+</RelativeLayout>

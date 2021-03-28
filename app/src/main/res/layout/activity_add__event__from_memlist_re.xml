@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_Create_Customer">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="예약 추가"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:visibility="visible"
+        >
+
+        <RadioButton
+            android:id="@+id/priceRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유료 리터치"
+            android:layout_margin="5dp"/>
+
+        <RadioButton
+            android:id="@+id/freeRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="무료 리터치"
+            android:layout_margin="5dp"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:id="@+id/tabLl"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#dfdfdf"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:text="예약일시" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:text="예약시간" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:text="이름" />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:text="휴대폰번호" />
+
+            <TextView
+                android:id="@+id/priceTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:text="가격"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/add_num_shortmemoTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="특이사항 메모"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contentLl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dateTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="예약 날짜 선택"
+                android:inputType="text"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="예약 시간을 선택해주세요"
+                android:inputType="text"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:hint="고객명을 입력해주세요"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/numberTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:hint="01012345678"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:textSize="15sp"/>
+
+
+            <EditText
+                android:id="@+id/priceEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:hint="ex) 50000"
+                android:inputType="number"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/shortmemoEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:hint="ex) 카카오톡으로 연락"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/OkBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_num_recommendLl"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="완료" />
+
+</LinearLayout>

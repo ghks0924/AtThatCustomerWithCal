@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_custom_calendar_2"
+    android:background="@drawable/calendar_frame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/previousBtn"
+            android:layout_margin="10dp"
+            android:background="@drawable/leftarrow"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="urrentate"
+            android:id="@+id/current_Date"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_weight="3"/>
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/nextBtn"
+            android:layout_margin="10dp"
+            android:background="@drawable/rightarrow"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="일"
+            android:background="#ffffff"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#E91E63"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="월"
+            android:background="#ffffff"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="화"
+            android:background="#ffffff"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="수"
+            android:background="#ffffff"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="목"
+            android:background="#ffffff"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="금"
+            android:background="#ffffff"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="토"
+            android:background="#ffffff"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#2196F3"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7"
+        ></GridView>
+
+
+
+</LinearLayout>

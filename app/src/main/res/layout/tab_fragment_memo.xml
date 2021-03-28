@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_EventWithTap_Activity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/fragment_memoEt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="메모를 적어주세욤"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:gravity="top"
+        android:padding="5dp"
+        android:background="@drawable/memo_frame_textview"/>
+
+</LinearLayout>

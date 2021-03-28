@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeMenuActivity"
+    android:background="@color/white"
+    android:id="@+id/Rl">
+
+    <RelativeLayout
+        android:id="@+id/topLl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/previous_cardview"
+            android:layout_width="@dimen/arrow_background_width"
+            android:layout_height="@dimen/arrow_background_height"
+            android:backgroundTint="@android:color/transparent"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:rippleColor="@color/weakGrey"
+            android:clickable="true"
+
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/current_date_cardview"
+
+            android:layout_marginLeft="@dimen/activity_big_horizontal_margin">
+
+            <ImageView
+                android:layout_width="@dimen/arrow_icon_width"
+                android:layout_height="@dimen/arrow_icon_height"
+                android:layout_gravity="center"
+                android:background="@drawable/thin_left_arrow" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:id="@+id/joinTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosansmonocjkkrbold"
+            android:gravity="center"
+            android:text="메뉴"
+            android:textColor="#211f1f"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:fontFamily="@font/notosanscjkkrmedium"
+            android:text="설정 이미지뷰"
+            android:textColor="@color/mainPink"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mainGreyForLine" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="홈메뉴 액티비티"
+        android:textColor="@color/mainGrey"
+
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

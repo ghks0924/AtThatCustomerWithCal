@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainPink">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="예약 추가"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/newCustomerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="신규고객 리터치"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:hint="고객을 선택해주세요"
+            android:inputType="textShortMessage"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/eventEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:hint="고객 이름을 입력해주세요"
+            android:inputType="textShortMessage"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_margin="3dp"/>
+
+
+        <EditText
+            android:id="@+id/numberEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:hint="전화번호를 - 없이 숫자만 입력해주세요"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_margin="3dp"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/eventTime"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:hint="예약 시간을 선택해주세요"
+            android:inputType="textShortMessage"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/priceRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유료 리터치"
+            android:layout_margin="5dp"/>
+
+        <RadioButton
+            android:id="@+id/freeRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="무료 리터치"
+            android:layout_margin="5dp"/>
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf" />
+
+    <LinearLayout
+        android:id="@+id/priceLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="리터치 가격"
+            android:textSize="15sp"
+            android:layout_margin="3dp"/>
+
+        <EditText
+            android:id="@+id/priceEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="가격을 입력해주세요 ex) 50000"
+            android:inputType="numberDecimal"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=" 간단 메모 \n (생략가능)"
+            android:textSize="15sp"
+            android:layout_margin="3dp"/>
+
+        <EditText
+            android:id="@+id/memoEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:inputType="textShortMessage"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf" />
+
+    <Button
+        android:id="@+id/addevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="확인"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+</LinearLayout>

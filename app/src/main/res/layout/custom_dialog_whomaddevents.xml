@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:ignore="MissingDefaultResource">
+
+
+
+    <TextView
+        android:id="@+id/newCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:inputType="text"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:hint="신규 손님"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf"/>
+
+    <TextView
+        android:id="@+id/oldCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:hint="기존 손님"/>
+
+</LinearLayout>

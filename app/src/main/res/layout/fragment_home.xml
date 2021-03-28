@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/headerRl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/activity_small_vertical_margin">
+
+        <TextView
+            android:id="@+id/menuIv"
+            android:layout_width="@dimen/hamburger_icon_width"
+            android:layout_height="@dimen/hamburger_icon_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_big_horizontal_margin"
+            android:background="@drawable/menu"
+
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+          />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/previous_cardview"
+            android:layout_width="@dimen/arrow_background_width"
+            android:layout_height="@dimen/arrow_background_height"
+            android:backgroundTint="@android:color/transparent"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:rippleColor="@color/weakGrey"
+            android:clickable="true"
+
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/current_date_cardview"
+
+            android:layout_marginRight="@dimen/activity_small_horizontal_margin">
+
+            <ImageView
+                android:layout_width="@dimen/arrow_icon_width"
+                android:layout_height="@dimen/arrow_icon_height"
+                android:layout_gravity="center"
+                android:background="@drawable/thin_left_arrow" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/current_date_cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent"
+
+            android:layout_centerInParent="true"
+            app:cardElevation="0dp"
+            android:clickable="true"
+
+            app:rippleColor="@color/weakGrey"
+
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:id="@+id/current_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:fontFamily="@font/notosansmonocjkkrbold"
+                android:text="CurrenDate"
+                android:textSize="@dimen/title_textsize"
+                android:textColor="@color/mainGrey"
+
+                android:layout_gravity="center"
+
+                android:paddingRight="@dimen/activity_small_horizontal_margin"
+                android:paddingLeft="@dimen/activity_small_horizontal_margin"/>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/next_cardview"
+            android:layout_width="@dimen/arrow_background_width"
+            android:layout_height="@dimen/arrow_background_height"
+            android:backgroundTint="@android:color/transparent"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="0dp"
+            app:rippleColor="@color/weakGrey"
+            android:clickable="true"
+
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/current_date_cardview"
+
+            android:layout_marginLeft="@dimen/activity_small_horizontal_margin">
+
+            <ImageView
+                android:layout_width="@dimen/arrow_icon_width"
+                android:layout_height="@dimen/arrow_icon_height"
+                android:background="@drawable/thin_simplearrow"
+                android:layout_gravity="center" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </RelativeLayout>
+
+
+    <com.example.atthatcustomerwithcal.CustomCalendarView_event
+        android:id="@+id/customcalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerRl"
+        android:fitsSystemWindows="true" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botLl"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/mainRed"
+        android:src="@drawable/white_cross"
+        app:borderWidth="0dp"
+
+        app:elevation="1dp"
+        app:tint="@null" />
+
+</RelativeLayout>

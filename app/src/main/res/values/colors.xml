@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="darkGrey">#A3A3A3</color>
+    <color name="weakGrey">#dfdfdf</color>
+
+
+    //==============main Colors==============
+    <color name="mainPink">#ebbdc5</color>
+    <color name="ivory">#fff4eb</color>
+    <color name="mainGrey">#4f4f4f</color>
+    <color name="mainRed">#ea562e</color>
+    <color name="black">#221f20</color>
+    <color name="mainGreen">#419655</color>
+    <color name="mainBlue">#0c0a4d</color>
+    <color name="mainYellow">#f4de71</color>
+
+    <color name="mainGreyFor50">#804f4f4f</color>
+    <color name="mainGreyFor30">#4D4f4f4f</color>
+    <color name="mainGreyForLine">#4De5e5e5</color>
+    <color name="mainGreyForCalendarCell">#80e5e5e5</color>
+
+    <color name="transparent">#00000000</color>
+
+</resources>

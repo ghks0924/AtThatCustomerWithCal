@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mainPink</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        // 상태바 색상
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">@color/mainPink</item>
+        <item name="colorControlHighlight">#dfdfdf</item>
+
+
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:textColor">@color/mainGrey</item>
+
+        <!--EditText 밑줄 색깔-->
+        <item name="colorControlNormal">@color/mainPink</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar2" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mainPink</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        // 상태바 색상
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">@color/mainPink</item>
+        <item name="colorControlHighlight">#dfdfdf</item>
+
+
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:textColor">@color/mainGrey</item>
+
+        <!--EditText 밑줄 색깔-->
+        <item name="colorControlNormal">@color/mainPink</item>
+
+    </style>
+</resources>

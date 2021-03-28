@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/single_row_memoLl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:backgroundTint="@color/mainRed"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+
+    android:layout_margin="3dp"
+
+
+    app:cardCornerRadius="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleTvForMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/margin_four_dp"
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:includeFontPadding="false"
+        android:text="미입력_제목"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/dateTvForMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTvForMessage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/margin_two_dp"
+
+
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:includeFontPadding="false"
+        android:text="메모가 저장된 날짜"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/contentTvForMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateTvForMessage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/margin_two_dp"
+        android:layout_marginBottom="@dimen/margin_four_dp"
+
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:text="010-3044-5548"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

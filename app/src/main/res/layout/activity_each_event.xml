@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner_weakgrey"
+    android:orientation="vertical"
+    tools:context=".EachEventActivity">
+
+    <RelativeLayout
+        android:id="@+id/titleRl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="예약정보"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:text="닫기"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/addBtnLl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/titleRl"
+        android:orientation="horizontal"
+        android:layout_margin="3dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/addCusBtn"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/titleRl"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="고객등록"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/pickCusBtn"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/titleRl"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="고객선택"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/nameLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleRl"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/nameIv"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/each_nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="나미란"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numberLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameLl"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/numberIv"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/smartphone" />
+
+        <TextView
+            android:id="@+id/numberTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="01030773637"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/sharingBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sharing" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dateLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberLl"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dateIv"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/each_dateTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="2020년 12월 12일"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/priceLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateLl"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/priceIv"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/won" />
+
+        <TextView
+            android:id="@+id/each_priceTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:gravity="center_vertical"
+            android:inputType="textShortMessage"
+            android:paddingLeft="5dp"
+            android:text="50000원"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/radioLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceLl"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/cashRb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:text="현금결제"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/cardRb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="카드결제"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/memoLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioLl"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/memoIv"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/memo" />
+
+        <TextView
+            android:id="@+id/each_memoTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:gravity="top"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#838383"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/materialNoteLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/memoLl"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/materialTv"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="재료" />
+
+        <EditText
+            android:id="@+id/materialEt"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="3dp"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#838383"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/surgeryNoteLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/materialNoteLl"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/surgeryNoteTv"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="시술내용" />
+
+        <EditText
+            android:id="@+id/surgeryNoteEt"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="3dp"
+            android:gravity="top"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#838383"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/botLl"
+        android:layout_marginTop="30dp"
+        android:background="@color/mainPink" />
+
+    <RelativeLayout
+        android:id="@+id/botLl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="1dp">
+
+        <Button
+            android:id="@+id/noShowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/white"
+            android:text="노쇼"
+            android:textColor="#FF0000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/goToMemberBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="회원화면" />
+
+        <TextView
+            android:id="@+id/completeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="시술완료"
+            android:textColor="@color/mainPink"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

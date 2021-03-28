@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 1. 콘텐츠 영역-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <RelativeLayout
+                android:id="@+id/topRl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+
+                    android:fontFamily="@font/gilroyextrabold"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mainGreyForLine"
+            android:layout_marginBottom="1.5dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.example.atthatcustomerwithcal.CustomCalendarView_event
+                android:id="@+id/activity_custom_calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/eventDateTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="oo월 oo일 의 예약" />
+
+                <ScrollView
+                    android:id="@+id/scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:layout_below="@+id/eventDateTv"
+                    android:layout_above="@+id/botLl">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <ListView
+
+                            android:id="@+id/eventsListview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+                <TextView
+                    android:id="@+id/noeventTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/botLl"
+                    android:layout_below="@+id/eventDateTv"
+                    android:gravity="center"
+                    android:text="등록된 예약이 없습니다."
+                    android:visibility="gone" />
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/botLl"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                   android:layout_marginBottom="5dp"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/albumLl"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_margin="2dp">-->
+
+<!--                       <ImageView-->
+<!--                           android:layout_width="30dp"-->
+<!--                           android:layout_height="30dp"-->
+<!--                           android:src="@drawable/album2"/>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+
+<!--                            android:fontFamily="@font/notosanscjkkrmedium"-->
+<!--                            android:text="전체앨범"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textColor="#aaaaaa"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/memoLl"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_margin="2dp">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/memo2"/>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+
+<!--                            android:fontFamily="@font/notosanscjkkrmedium"-->
+<!--                            android:text="메모장"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textColor="#aaaaaa"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/messageLl"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_margin="2dp">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/message2"/>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+
+<!--                            android:fontFamily="@font/notosanscjkkrmedium"-->
+<!--                            android:text="메세지"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textColor="#aaaaaa"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/graphLl"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_margin="2dp">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/graph2"/>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+
+<!--                            android:fontFamily="@font/notosanscjkkrmedium"-->
+<!--                            android:text="매출관리"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textColor="#aaaaaa"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/customerLl"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_margin="2dp">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/customer2"/>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+
+<!--                            android:fontFamily="@font/notosanscjkkrmedium"-->
+<!--                            android:text="고객관리"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textColor="#aaaaaa"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@+id/botLl"
+
+                    app:borderWidth="0dp"
+                    android:backgroundTint="@color/mainRed"
+                    android:src="@drawable/white_cross"
+                    app:tint="@null"
+
+                    android:layout_margin="16dp" />
+
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottomNavigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dfdfdf"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </LinearLayout>
+        
+
+    </LinearLayout>
+
+<!--    &lt;!&ndash;    사이드 드로어 메뉴&ndash;&gt;-->
+
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:id="@+id/nav"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="start"-->
+<!--        app:headerLayout="@layout/drawer_header"-->
+<!--        app:menu="@menu/drawer_menu" />-->
+    
+    
+
+
+</LinearLayout>
